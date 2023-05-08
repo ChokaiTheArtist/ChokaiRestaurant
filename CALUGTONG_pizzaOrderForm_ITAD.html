@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Order Form</title>
+    <style type="text/css">
+    
+    </style>
+	<link rel="stylesheet" href="CALUGTONG_IMAGES_ITAD/order_design.css">
+</head>
+	<body>
+		<link rel="stylesheet" type="text/css">
+		<!--CALUGTONG, CHARLES-->
+  
+		<h1 class="title">Chokai's Restaurant</h1><br>  
+		<table>
+			<form method="post">
+				<tr>
+					<th colspan="2">Customer Information</th>
+				</tr> 
+				<tr>
+					<td>
+						<label for="fullname">Full Name:</label>
+					</td>
+					<td>
+						<input class="textForm" type="text" id="fullname" name="fullname" placeholder="Type your name here." required>   
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="address">Complete Address:</label>
+					</td> 
+					<td> 
+						<textarea class="textForm" id="address" name="address" placeholder="Type your address here." required></textarea>
+					</td> 
+				</tr>
+				<tr>
+					<td>
+						<label for="contact">Contact Number:</label>    
+					</td>
+					<td>
+						<input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="09#-###-###" required><br>
+					</td> 
+				</tr>
+				<tr>
+					<td>
+						<label for="email">Email Address:</label>
+					</td>
+					<td>
+						<input class="textForm" type="email" id="email" name="email" placeholder="Type your email here" required><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="description">How to get to the place:</label>
+					</td>
+					<td>
+						<textarea class="textForm" id="description" name="description" placeholder="Instructions on how to get to your place." ></textarea><br>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">Order Form</th>
+				</tr>
+				<tr>
+					<td class="head">Burgers</td>
+					<td>
+						<input type="radio" id="single-patty" name="patty-type" value="single-patty">
+						<label for="single-patty">Single Patty</label><br>
+
+						<input type="radio" id="double-patty" name="patty-type" value="double-patty">
+						<label for="double-patty">Double Patty</label>
+						<br><br>
+
+						<input type="checkbox" id="with-cheese" name="with-cheese" value="with-cheese">
+						<label for="with-cheese">With Cheese</label>
+						<br>
+						
+						<input type="checkbox" id="coleslaw" name="coleslaw" value="coleslaw">
+						<label for="coleslaw">Coleslaw</label>
+						<br>
+						  
+						<input type="checkbox" id="tomato" name="tomato" value="tomato">
+						<label for="tomato">Tomato</label>
+						<br>
+						
+						<input type="checkbox" id="onion" name="onion" value="onion">
+						<label for="onion">Onion</label>
+						<br>
+
+						<input type="checkbox" id="cucumber" name="cucumber" value="cucumber">
+						<label for="cucumber">Cucumber</label>
+						<br>
+
+						  
+						<input type="checkbox" id="bacon" name="bacon" value="bacon">
+						<label for="bacon">Bacon</label>
+						<br><br>
+
+						<label for="bun-type">Choice of Bun:</label>
+						<select id="bun-type" name="bun-type">
+							<option value="white-bun">White Bun</option>
+							<option value="wheat-bun">Wheat Bun</option>
+							<option value="honey-oat">Honey Oat</option>
+							<option value="sugar-free">Sugar-Free</option>
+						</select>
+						<label for="burger-quantity">Quantity:</label>
+						<input type="number" id="burger-quantity" name="burger-quantity" min="1" max="10" value="1">
+					</td>
+				</tr>
+				<tr>
+					<td class="head">Pasta</td>
+					<td>
+						<label for="sauce-type">Sauce:</label>
+					<select id  ="sauce-type" name="sauce-type">
+						<option value="carbonara">Carbonara</option>
+						<option value="pesto">Pesto</option>
+						<option value="spaghetti">Spaghetti</option>
+						<option value="alfredo">Alfredo</option>
+						<option value="bolognese">Bolognese</option>
+						<option value="sugo-di-pomodoro">Sugo di Pomodoro</option>
+						<option value="extra-cheese">Extra Cheese</option>
+						<option value="extra-sauce">Extra Sauce</option>
+					</select>
+						<label for="pasta-quantity">Quantity:</label>
+						<input type="number" id="pasta-quantity" name="pasta-quantity" min="1" max="10" value="1">
+					</td>
+				</tr>
+				<tr>
+					<td class="head">Fries</td>
+					<td>
+						<label for="fries-size">Size:</label>
+						<select id="fries-size" name="fries-size">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+
+						<label for="fries-flavor">Flavor:</label>
+						<select id="fries-flavor" name="fries-flavor">
+							<option value="bbq">BBQ</option>
+							<option value="cheese">Cheese</option>
+							<option value="sour-cream">Sour Cream</option>
+						</select>
+						<br>
+
+						<label for="fries-quantity">Quantity:</label>
+						<input type="number" id="fries-quantity" name="fries-quantity" min="1" max="10" value="1">
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="head">Drinks</td>
+					<td>
+						<label for="drink-type">Drink:</label>
+						<select id="drink-type" name="drink-type">
+							<option value="cola">Cola</option>
+							<option value="lemonade">Lemonade</option>
+							<option value="orange-juice">Orange Juice</option>
+						<option value="iced-tea">Iced Tea</option>
+						</select>
+						<br>
+
+						<label for="drink-size">Size:</label>
+						<select id="drink-size" name="drink-size">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+						<br>
+
+						<label for="drink-quantity">Quantity:</label>
+						<input type="number" id="drink-quantity" name="drink-quantity" min="1" max="10" value="1">
+						<br>
+					</td>
+				</tr>
+					<td class="head">Feedback</td>
+					<td>
+						<label for="feedback">How can we improve the ordering form?</label>
+						<textarea class="textForm" id="feedback" name="feedback"></textarea>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="head">Delivery</td>
+					<td>
+					<label for="delivery-type">Delivery or Pick-up:</label>
+						<select id="delivery-type" name="delivery-type">
+							<option value="delivery">Delivery</option>
+							<option value="pick-up">Pick-up</option>
+						</select>
+						<br>
+					</td>  
+				</tr>
+				<tr>
+					<th colspan="2"><input type="submit" value="Submit Form"> 
+					<input type="reset" value="Clear Form">
+				</th>      
+			</form>
+		</table> 
+	</body>
+</html>
